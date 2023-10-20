@@ -31,6 +31,9 @@ pipeline {
     }
 
     post {
+        always {
+            cleanWs()
+        }
         success {
             // Hành động sau khi pipeline chạy thành công
             echo 'Pipeline ran successfully!'
