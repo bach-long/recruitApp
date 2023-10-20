@@ -20,6 +20,14 @@ pipeline {
                 }
             }
         }
+        stage('Unit Test Laravel') {
+            steps {
+                // Sử dụng công cụ Pint để kiểm tra convention
+                dir('be') {
+                    sh 'php artisan test'
+                }
+            }
+        }
     }
 
     post {
