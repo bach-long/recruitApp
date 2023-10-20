@@ -32,7 +32,8 @@ pipeline {
             steps {
                 // Sử dụng công cụ Pint để kiểm tra convention
                 dir('fe') {
-                    sh 'npx eslint'
+                    sh 'npm install'
+                    sh 'npx eslint src'
                 }
             }
         }
