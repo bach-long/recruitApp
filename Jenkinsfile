@@ -28,6 +28,14 @@ pipeline {
                 }
             }
         }
+        stage('Test Lint React') {
+            steps {
+                // Sử dụng công cụ Pint để kiểm tra convention
+                dir('fe') {
+                    sh 'npx eslint'
+                }
+            }
+        }
     }
 
     post {

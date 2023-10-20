@@ -1,0 +1,19 @@
+.background-color-main {
+  background-color: var(--color-main);
+}
+
+.cell-content {
+  color: white;
+  justify-content: center;
+  display: flex;
+  padding: 15px 0;
+  font-size: 20px;
+}
+
+.layout-container {
+  margin: 40px;
+  border: 1px solid var(--gray);
+  padding-left: 60px;
+  padding-bottom: 30px;
+  padding-right: 60px;
+}
